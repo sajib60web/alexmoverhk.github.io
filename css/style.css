@@ -1,0 +1,534 @@
+
+
+body {
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: 0;
+}
+
+/*....................global........................*/
+
+
+h1 {
+	font-size: 28px;
+	font-weight: 400;
+	margin-bottom: 30px;
+	color: #3ca210;
+
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 30px;
+	color: #3ca210;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+a {
+	color: #333;
+}
+
+a:hover {
+	color: #3ca210;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}
+
+p {
+	line-height: 30px;
+}
+
+label {
+	font-weight: 400;
+	color: #343434;
+	margin-bottom: 0;
+}
+
+button:hover,
+button:focus {
+	outline: 0;
+	box-shadow: none !important;
+}
+
+.btn {
+	background: transparent;
+    border: 2px solid #df6320;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 29px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #343434;
+}
+
+.btn:hover {
+	background: #df6320;
+	color: #fff;
+	border-color: #df6320;
+}
+
+.page-title {
+	color: #bfbfbf;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    background: #fafafa;
+    color: #000;
+    font-size: 12px;
+    border-radius: 2px;
+    height: 45px !important;
+    margin: 10px 0 15px;
+}
+
+.form-control:focus {
+	border: 1px solid #ccc;
+	outline: 0;
+	box-shadow: none;
+}
+
+.form-control:focus {
+	background: #fff;
+	border: 1px solid #343434;
+}
+
+/*.................header........................*/
+
+.top {
+	background: #fff;
+}
+.top .image {
+	padding: 10px 0;
+}
+.top .image img {
+	width: 300px;
+}
+
+.top .logo-text {
+	display: none;
+	padding: 20px;
+	transition: 3s;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+	color: #343434;
+}
+
+.main-menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f5f5f5;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding: 10px 0;
+}
+
+.main-menu .nav-item.active .nav-link{
+	color: #df6320 !important;
+}
+
+.main-menu .nav-item .nav-link {
+	color: #343434;
+	font-size: 14px;
+	letter-spacing: .05em;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.main-menu .nav-item .nav-link:hover{
+	color: #df6320;
+}
+
+.main-menu ul li a {
+	text-transform: uppercase;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.fixed-header .top .image {
+	display: none;
+}
+
+.fixed-header .logo-text {
+    display: block;
+    padding: 10px !important;
+    text-align: center;
+}
+
+.site-header .social {
+	padding: 35px 0;
+}
+
+.fixed-header .social {
+	padding: 10px !important;
+}
+
+.site-header .social a {
+	color: #343434;
+}
+
+.site-header .social a:hover{
+	color: #818181;
+}
+
+/*...............button....................*/
+
+#button {
+    display: inline-block;
+    background-color: #df6320;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 70px;
+    right: 6%;
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    color: #fff;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #3ca210;
+}
+#button:active {
+  background-color: #3ca210;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/*...................banner..........................*/
+.banner .bg-image {
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 600px;
+	background-repeat: no-repeat;
+}
+
+.home-banner  {
+	background-image: url(../image/image-asset.jpeg);
+}
+
+.contat-banner {
+	background-image: url(../image/Ben+working+IMG_7855+retouch.jpg);
+}
+
+/*...............home.....................*/
+ 
+
+.home .s-box {
+	position: relative;
+}
+
+.home .search:after {
+    content: '\f002';
+    position: absolute;
+    left: 19px;
+    top: 14px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+}
+
+.home .form-control {
+	border: 1px solid #777;
+	border-radius: 0;
+	padding: 25px 46px;
+}
+
+/*.................about.......................*/
+
+.about {
+	background: #f5f5f5;
+}
+
+/*...............Testimonial..................*/
+.Testimonial .testi-slide .media img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+	background: #3ca210;
+}
+
+/*...............footer................*/
+.footer {
+	background: #f5f5f5;
+	border-top: 1px solid #ccc;
+}
+
+.footer ul li {
+	display: block;
+	line-height: 30px;
+}
+
+
+/*..............copywrite...................*/
+
+.copywrite {
+	border-bottom: 1px solid #ccc;
+}
+.copywrite p a {
+	color: #df6320;
+}
+
+.copywrite p a:hover {
+	color: #3ca210;
+}
+
+.copywrite .social ul li {
+    display: inline-block !important;
+    background: #3b5998;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.copywrite .social ul li:hover{
+	background: #3ca210;
+}
+
+.copywrite .social ul li a {
+	color: #fff; 
+	display: block;
+}
+
+/*........................contact.............................*/
+
+.contact {
+	background: #f5f5f5;
+}
+.contact form span {
+	font-size: 12px;
+	margin-bottom: 20px;
+	display: block;
+	font-weight: 600;
+}
+
+.contact textarea {
+	height: 100px !important;
+}
+
+.contact .btn {
+    background: #df6320;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
+.con-details ul li {
+	line-height: 30px;
+}
+
+/*..................faq....................*/
+.faq-details h5 {
+	color: #3ca210;
+	margin: 15px 0;
+	font-size: 18px;
+
+}
+
+.faq-details .card .card-header {
+	background: transparent;
+	padding: 10px 0 !important;
+	border: 0;
+}
+
+.faq-details .card .card-body {
+	padding: 15px 0;
+}
+
+.faq-details  ul li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.faq-details  table tr {
+	line-height: 40px;
+}
+
+.faq-details span {
+	color: #3ca210; 
+	font-weight: 500; 
+	margin: 15px 0; 
+	font-size: 15px;
+}
+
+.faq-details span.category {
+	display: block;
+}
+
+/*......................Pay.......................*/
+.payment-info .subtitle {
+	color: #3ca210;
+	font-weight: 700;
+	font-size: 17px;
+}
+
+.payment-info table tr {
+	line-height: 40px;
+}
+
+.payment-info .card .card-body .card-img {
+	flex: 1;
+}
+
+.payment-info .card .card-body .card-img img {
+	width: 200px;
+}
+
+.payment-info .card .card-body .card-text {
+	flex: 2;
+}
+
+.payment-info .btn {
+    background: #df6320;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+/*........................galllery-slider.............................*/
+.galllery-slider .owl-carousel .item img {
+	height: 700px;
+}
+
+.galllery-slider .owl-carousel .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+.galllery-slider .owl-theme .owl-dots .owl-dot span {
+    background: transparent;
+    border: 1px solid #fff;
+    width: 12px;
+    height: 12px;
+}
+
+.galllery-slider .owl-theme .owl-dots .owl-dot.active span, 
+.galllery-slider .owl-theme .owl-dots .owl-dot:hover span {
+	background: #fff;
+}
+
+/*.............................responsive............................*/
+@media only screen and (max-width: 800px) {
+
+	.site-header {
+		padding: 10px 0;
+		background: #f5f5f5;
+	}
+
+	.top {
+		background: transparent;
+	}
+
+	.top .logo-text {
+	    display: block;
+	    text-align: center;
+	}
+
+	.top .image img {
+		display: none;
+	}
+
+	.site-header .social {
+		padding: 0 !important;
+		position: absolute;
+		top: -22px;
+		right: 16px;
+	}
+
+	.main-menu {
+		display: block;
+		padding: 0;
+		background: transparent;
+		border: 0;
+	}
+
+	.navbar {
+		display: block;
+		margin-top: -27px;
+		padding: 0;
+		margin-left: -17px;
+	}
+
+	.site-header.fixed-header {
+		padding: 10px 0;
+	}
+
+	.top .logo-text {
+		padding: 0;
+	}
+
+	.site-header.fixed-header .logo-text {
+	    position: absolute;
+	    text-align: center;
+	    left: 0;
+	    right: 0;
+	}
+
+	.site-header.fixed-header .navbar {
+		margin-top: 0;
+		padding: 0;
+	}
+
+	.site-header.fixed-header .social {
+		top: 8px !important;
+	}
+
+	.video {
+		width: 100%;
+	}
+
+	.navbar-toggler-icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	.navbar-nav {
+		margin: 6px;
+	}
+
+	.galllery-slider .owl-carousel .item img  {
+		height: 400px;
+	}
+}
